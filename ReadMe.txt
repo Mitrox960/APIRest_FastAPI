@@ -1,0 +1,1 @@
+A la racine faire la commande "pip install -e ." pour créer les dépendances et pouvoir avoir accès à toute l'arborescence du projet.

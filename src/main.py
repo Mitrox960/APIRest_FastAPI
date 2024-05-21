@@ -1,7 +1,8 @@
 from fastapi import FastAPI
-from src.application.interfaces.rest.user_controller import router as user_router
-from src.settings import settings
+from src import database
+from src.routes import user_router
 
 app = FastAPI()
+database.create_database()
 
-app.include_router(user_router, prefix=settings.api_v1_str)
+app.include_router(user_router.router)

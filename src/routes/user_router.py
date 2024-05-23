@@ -7,6 +7,6 @@ from src.database import get_session
 
 router = APIRouter()
 
-@router.post("/accounts", response_model=User)
+@router.post("/create_account", response_model=User)
 def create_account(user_create: UserCreate, db: Session = Depends(get_session)):
     return user_controller.create_account(user_create, db)

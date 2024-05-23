@@ -7,7 +7,6 @@ class Characters(SQLModel, table=True):
     gender: str
     ethnic: str
 
-
 class CharacterCreate(SQLModel):
     name: str
     gender: str

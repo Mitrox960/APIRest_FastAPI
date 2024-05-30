@@ -7,7 +7,5 @@ class Characters(SQLModel, table=True):
     gender: str
     ethnic: str
 
-class CharacterCreate(SQLModel):
-    name: str
-    gender: str
-    ethnic: str
+    users_id: Optional[int] = Field(default=None, foreign_key="users.id")
+

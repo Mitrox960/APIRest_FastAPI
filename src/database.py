@@ -3,6 +3,7 @@ from sqlmodel import SQLModel, create_engine, Session, SQLModel
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL, echo=True)
+SQLModel.metadata.drop_all(engine)
 
 def get_session():
     with Session(engine) as session:

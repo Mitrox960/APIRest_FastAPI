@@ -11,3 +11,6 @@ class Statistiques(SQLModel, table=True):
     intelligence: int
     faith: int
     chance: int
+
+    character_id: Optional[int] = Field(default=None, foreign_key="characters.id")
+

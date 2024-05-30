@@ -1,6 +1,6 @@
 A la racine faire la commande "pip install -e ." pour créer les dépendances et pouvoir avoir accès à toute l'arborescence du projet.
 Une fois les dépendances installé, se rendre sur le dossier src/ au sein du projet et executé le script: "python addkey.py"
-Pour lancer l'app, allez dans src et 'tapez uvicorn main:app --reload'
+Pour lancer l'app, allez dans src et 'uvicorn main:app --reload'
 
 Création de compte:
 Entrez ce format JSON:
